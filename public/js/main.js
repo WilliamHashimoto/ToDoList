@@ -25,7 +25,7 @@ function myFunction() {
     newLi.appendChild(button);
     newElem.appendChild(newLi);
 
-    document.querySelectorAll(".myBtn").forEach(item => item.addEventListener('click', function(e) {
+    Array.from(document.querySelectorAll(".myBtn")).forEach(item => item.addEventListener('click', function(e) {
         e.target.parentElement.remove();
     }));
 }
